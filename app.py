@@ -59,3 +59,25 @@ if st.button('Show Recommendations'):
         st.text(names[4])
         st.image(posters[4])
 
+custom_styles = """
+    <div class="credits"> Presented by: <a href="https://www.linkedin.com/in/rnyati/" target="_blank"> Raghav Nyati</a></div>
+    
+    <style>
+        .credits {
+            font-weight: bold;
+            margin-top: 60px;
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+        .streamlit button {
+            background-color: #008080;
+            color: white;
+        }
+        /* Add more styles as needed */
+    </style>
+    
+"""
+
+# Apply styles using st.markdown
+st.markdown(custom_styles, unsafe_allow_html=True)
