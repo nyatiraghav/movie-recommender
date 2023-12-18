@@ -59,22 +59,3 @@ if st.button('Recommend'):
         st.text(names[4])
         st.image(posters[4])
 
-custom_styles = """
-    <style>
-        .stApp {
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, sans-serif;
-        }
-
-        .streamlit button {
-            background-color: #008080;
-            color: white;
-        }
-
-        /* Add more styles as needed */
-    </style>
-"""
-
-# Apply styles using st.markdown
-st.markdown(custom_styles, unsafe_allow_html=True)
