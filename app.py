@@ -38,7 +38,7 @@ selected_movie_name = st.selectbox(
 
 st.write('You selected:', selected_movie_name)
 
-if st.button('Recommend'):
+if st.button('Show Recommendations'):
     names, posters = recommend(selected_movie_name)
 
     col1, col2, col3, col4, col5 = st.columns(5)
@@ -59,3 +59,25 @@ if st.button('Recommend'):
         st.text(names[4])
         st.image(posters[4])
 
+custom_styles = """
+    <div class="raghav"> Presented by: <a href="https://www.linkedin.com/in/rnyati/" target="_blank"> Raghav Nyati</a></div>
+    
+    <style>
+        .raghav {
+            font-weight: bold;
+            margin-top: 60px;
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+        .streamlit button {
+            background-color: #008080;
+            color: white;
+        }
+        /* Add more styles as needed */
+    </style>
+    
+"""
+
+# Apply styles using st.markdown
+st.markdown(custom_styles, unsafe_allow_html=True)
