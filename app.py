@@ -61,7 +61,7 @@ if st.button('Recommend'):
 
 custom_styles = """
     <style>
-        body {
+        .stApp {
             background-color: #000;
             color: #fff;
             font-family: Arial, sans-serif;
